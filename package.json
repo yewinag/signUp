@@ -1,0 +1,49 @@
+{
+  "name": "userSignUp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^0.1.0",
+    "@react-native-community/clipboard": "^1.2.3",
+    "react": "16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hook-form": "^6.4.0",
+    "react-native": "0.63.2",
+    "react-native-geolocation-service": "^5.0.0",
+    "react-native-gesture-handler": "^1.7.0",
+    "react-native-otp-inputs": "^6.0.0",
+    "react-native-reanimated": "^1.13.0",
+    "react-native-router-flux": "^4.2.0",
+    "react-native-screens": "^2.10.1",
+    "yup": "^0.29.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "babel-jest": "^25.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
+    "eslint": "^6.5.1",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "verbose": true,
+    "testMatch": [
+      "<rootDir>/__tests__/*"
+    ],
+    "setupFiles": [
+      "./jest/setup.js"
+    ]
+  }
+}
