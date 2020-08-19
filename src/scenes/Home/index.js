@@ -27,7 +27,7 @@ class Home extends Component {
       console.warn(err);
     }
   };
-  render() {
+  render() {    
     return (
       <View>
         <ImageBackground 
@@ -48,6 +48,9 @@ class Home extends Component {
               title="SignUpHook"
               onPress={() => Actions.singuphook()} />
           </View>
+        </View>
+        <View>
+          <Text>{JSON.stringify(this.props.payload)}</Text>
         </View>
       </View>
     )

@@ -145,7 +145,7 @@ class SignUp extends Component {
                     console.log('response data')
                 });
                 this.setState({userData: payload})
-                Actions.otp()
+                Actions.otp({payload: payload})
     }
     render() {
         return (
@@ -158,8 +158,7 @@ class SignUp extends Component {
                     onChangePasswordConfirm={(value)=> this.setState({passwordConfirm: value})}
                     onSubmit={()=> this.findCoordinatesUserSignUp()}
                     errors={this.state.errors}
-                />
-                <UserSubmitDataView userData={this.state.userData}/>
+                />                
                 </ScrollView>
             </SafeAreaView>
         )
