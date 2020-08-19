@@ -117,7 +117,6 @@ class SignUp extends Component {
             password,
             passwordConfirm
         } = this.state;
-        console.log('location' + location)
         if(this.isValidUserForm()){
             const payload = {
                 email: email,
@@ -142,7 +141,6 @@ class SignUp extends Component {
             .then(function(response) {
                     return response.json();
                 }).then(function(data) {
-                    console.log('response data')
                 });
                 this.setState({userData: payload})
                 Actions.otp({payload: payload})

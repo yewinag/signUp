@@ -16,8 +16,7 @@ class OtpConfirm extends Component {
             this.otpConfirmApi(this.state.otp)
         }
     }
-    otpConfirmApi(otp){
-        console.log(otp);        
+    otpConfirmApi(otp){ 
         Actions.home({payload: Object.assign(this.props.payload,{otpCode: otp})});
     }
     checkOtp = () => !!this.state.otp && this.state.otp.length > 3;

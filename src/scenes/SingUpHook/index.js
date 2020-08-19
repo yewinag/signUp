@@ -54,7 +54,6 @@ class SignUpHook extends Component {
             .then(function(response) {
                     return response.json();
                 }).then(function(data) {
-                    console.log('response data')
                 });
                 
         Actions.otp({payload: payload})
